@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Service Order</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <main id="app">
+
+        <section class="items">
+            <h4>Pick Your Order</h4>
+
+            <div 
+            v-for="product in products" 
+            class="product "
+            @click ="product.active =! product.active"
+            :class = "{selected : product.active}"
+            >
+                <div class="photo">
+                    <img :src="product.photo">
+                </div>
+                <div class="description">
+                    <span class="name">{{product.name}}</span>
+                    <span class="price">{{product.price}}</span>
+                    
+                    <div 
+                    class="quantity-area"
+                     v-if = "product.active"
+                     >
+                        <button @click.stop = "product.quantity--" :disabled = "product.quantity <= 1">-</button>
+                        <span class="quantity">{{product.quantity}}</span>
+                        <button @click.stop = "product.quantity++">+</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- all thinf we will do dynamicaly with the use of vue js -->
+
+            <!-- <div class="product">
+                <div class="photo">
+                    <img src="/img/mc-chicken.png">
+                </div>
+                <div class="description">
+                    <span class="name">Mc Chicken</span>
+                    <span class="price">$4.99</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/double-cb.png">
+                </div>
+                <div class="description">
+                    <span class="name">Double Cheese Burger</span>
+                    <span class="price">$2.99</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/fries.png">
+                </div>
+                <div class="description">
+                    <span class="name">Fries</span>
+                    <span class="price">$2.99</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/nuggets.png">
+                </div>
+                <div class="description">
+                    <span class="name">Mc Nuggets</span>
+                    <span class="price">$3.49</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/salad.png">
+                </div>
+                <div class="description">
+                    <span class="name">Salad</span>
+                    <span class="price">$2.79</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/cola.png">
+                </div>
+                <div class="description">
+                    <span class="name">Coke</span>
+                    <span class="price">$1.99</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/lipton.png">
+                </div>
+                <div class="description">
+                    <span class="name">Ice Cream</span>
+                    <span class="price">$1.99</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product">
+                <div class="photo">
+                    <img src="/img/water.png">
+                </div>
+                <div class="description">
+                    <span class="name">water</span>
+                    <span class="price">$1.49</span>
+                    <div class="quantity-area">
+                        <button>-</button>
+                        <span class="quantity">1</span>
+                        <button>+</button>
+                    </div>
+                </div>
+            </div> -->
+
+        </section>
+
+        <section class="summery" v-if="total()>0">
+            <strong>Order Details</strong>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for ="product in products">
+                        <template v-if="product.active">
+                            <td>{{product.quantity + 'x ' + product.name}}</td>
+                            <td>{{(product.quantity * product.price).toFixed(2)}}</td>
+                        </template>
+                    </tr>
+
+                    <tr>
+                        <th>Total</th>
+                        <th>{{total()}}</th>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- vue js script  -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
